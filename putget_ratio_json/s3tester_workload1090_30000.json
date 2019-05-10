@@ -1,0 +1,3 @@
+{"mixedWorkload":
+    [{"operationType":"put","ratio":3000},
+    {"operationType":"get","ratio":27000}]}
