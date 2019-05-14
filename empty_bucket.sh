@@ -7,7 +7,7 @@ BUCKET=`env | grep benchmark_bucket | cut -d= -f 2`
 PAGESIZE=10000000 ## one million objects
 
 ## VAR
-HOME_DIR=/root/benchmark_batch
+HOME_DIR=/root/s3_benchmark_batch
 DATE_YMDHMS=`date +%Y%m%d_%H%M%S`
 DATE_YMD=`date +%Y%m%d`
 

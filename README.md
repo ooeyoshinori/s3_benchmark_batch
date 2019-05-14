@@ -76,7 +76,19 @@ tail -f /root/s3_benchmark_batch/xxxxxxxx.log
 ## need to install aws cli
 yum install epel-release
 yum install python-pip -y
+pip install awscli --upgrade --user
 cp /root/.local/bin/aws /usr/local/bin/
+
+cd /root/s3_benchmark_batch
+vi ./empty_bucket.sh
+## ---- sample output ----
+if [ "$ENV" == "XXXXXXXX" ]; then
+  export AWS_ACCESS_KEY=XXXXXXXX
+  export AWS_SECRET_ACCESS_KEY=XXXXXXXX
+  ENDPOINT=http://XXXXXXXX
+fi
+## ---- sample output ----
+
 
 ## need to add access-key and secret-key pair on ~/.aws/credentials file
 chmod a+x ./empty_bucket.sh
