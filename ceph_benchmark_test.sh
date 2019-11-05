@@ -24,7 +24,7 @@ fi
 
 ## VAR
 HOME_DIR=`pwd`
-HOST_NUM=`hostname -s | cut -b 20-`
+HOST_NUM=`hostname -s`
 
 echo "start $HOST_NUM operation"
 
